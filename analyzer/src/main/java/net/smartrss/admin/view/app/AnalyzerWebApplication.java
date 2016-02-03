@@ -1,6 +1,6 @@
-package net.smartrss.admin;
+package net.smartrss.admin.view.app;
 
-import net.smartrss.admin.view.HomePage;
+import net.smartrss.admin.view.home.HomePage;
 import org.apache.wicket.protocol.http.WebApplication;
 
 /**

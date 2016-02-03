@@ -1,7 +1,7 @@
 package net.smartrss.admin.view;
 
-import org.apache.wicket.markup.html.WebPage;
 import net.smartrss.admin.service.AnalyzeService;
+import org.apache.wicket.markup.html.WebPage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
