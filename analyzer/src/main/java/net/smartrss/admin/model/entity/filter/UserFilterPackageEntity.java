@@ -19,6 +19,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import net.smartrss.admin.model.entity.account.FeedAccountEntity;
 import net.smartrss.admin.model.entity.enumerated.UserFilterPackageStatus;
 import net.smartrss.admin.model.entity.enumerated.UserFilterPackageType;
 import net.smartrss.admin.model.entity.PrimaryKey;
@@ -31,7 +32,7 @@ import net.smartrss.admin.model.entity.PrimaryKey;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class UserFilterPackageEntity implements Serializable {
+public class UserFilterPackageEntity<TYPE extends FeedAccountEntity> implements Serializable {
 
     @Getter
     @Setter
@@ -89,10 +90,12 @@ public class UserFilterPackageEntity implements Serializable {
     @Column(name = "updated", nullable = false)
     private Long updated = System.currentTimeMillis();
 
+    @Getter
+    @Setter
     @ManyToOne
     @JoinColumns({
-            @JoinColumn(name = "", referencedColumnName = ""),
-            @JoinColumn(name = "", referencedColumnName = "")
+            @JoinColumn(name = "accountProviderId", referencedColumnName = "providerId"),
+            @JoinColumn(name = "accountId", referencedColumnName = "id")
     })
-    private
+    private FeedAccountEntity account;
 }

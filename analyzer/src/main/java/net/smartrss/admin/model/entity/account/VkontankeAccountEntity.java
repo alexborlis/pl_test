@@ -12,7 +12,7 @@ import lombok.ToString;
  */
 @Entity
 @NoArgsConstructor
-@AllArgsConstructor
+//@AllArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class VkontankeAccountEntity implements Serializable {
