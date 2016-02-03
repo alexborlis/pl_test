@@ -1,5 +1,6 @@
-package net.smartrss.admin.view.app;
+package net.smartrss;
 
+import net.smartrss.admin.view.app.CsrfTokenFilter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
