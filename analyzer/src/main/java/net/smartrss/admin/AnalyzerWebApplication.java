@@ -1,7 +1,7 @@
-package org.playtech.test;
+package net.smartrss.admin;
 
+import net.smartrss.admin.view.HomePage;
 import org.apache.wicket.protocol.http.WebApplication;
-import org.playtech.test.view.HomePage;
 
 /**
  * Created by Alexander on 28.01.2016.

@@ -2,10 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="org.playtech.test"/>
+  <import resource="classpath:security-context.xml"/>
 
-    <import resource="classpath:hibernate-context.xml" />
+  <context:component-scan base-package="net.smartrss"/>
+
+  <import resource="classpath:hibernate-context.xml"/>
+  <import resource="classpath:queue-context.xml"/>
+  <import resource="classpath:social-networks-context.xml"/>
 
 </beans>

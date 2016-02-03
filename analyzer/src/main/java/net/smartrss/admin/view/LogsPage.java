@@ -1,4 +1,4 @@
-package org.playtech.test.view;
+package net.smartrss.admin.view;
 
 import org.apache.wicket.markup.html.WebPage;
 

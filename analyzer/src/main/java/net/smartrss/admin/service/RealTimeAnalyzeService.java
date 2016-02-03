@@ -1,4 +1,4 @@
-package org.playtech.test.service;
+package net.smartrss.admin.service;
 
 import org.springframework.stereotype.Service;
 

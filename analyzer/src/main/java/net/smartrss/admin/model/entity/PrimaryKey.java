@@ -1,4 +1,4 @@
-package org.playtech.test.model.sql.entity;
+package net.smartrss.admin.model.entity;
 
 import lombok.*;
 

@@ -1,8 +1,7 @@
-package org.playtech.test.view;
+package net.smartrss.admin.view;
 
 import org.apache.wicket.markup.html.WebPage;
-import org.playtech.test.service.AnalyzeService;
-import org.playtech.test.service.RealTimeAnalyzeService;
+import net.smartrss.admin.service.AnalyzeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
